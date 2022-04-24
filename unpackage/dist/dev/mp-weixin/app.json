@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/join/join",
+    "pages/appointment/appointment",
+    "pages/my/my",
+    "pages/dynamic/dynamic"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "聪明鱼",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#444444",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/index0.png",
+        "selectedIconPath": "static/tabbar/index1.png"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "text": "参与",
+        "iconPath": "static/tabbar/join0.png",
+        "selectedIconPath": "static/tabbar/join1.png"
+      },
+      {
+        "pagePath": "pages/appointment/appointment",
+        "text": "预约",
+        "iconPath": "static/tabbar/appointment0.png",
+        "selectedIconPath": "static/tabbar/appointment1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/tabbar/my0.png",
+        "selectedIconPath": "static/tabbar/my1.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}
