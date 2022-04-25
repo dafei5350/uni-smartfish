@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-nav-bar":1,"node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot":1,"node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons":1,"node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-status-bar":1};
+/******/ 		var cssChunks = {"node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot":1,"uni_modules/hx-navbar/components/hx-navbar/hx-navbar":1,"node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-nav-bar":"node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-nav-bar","node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot":"node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot","node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons":"node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons","node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-status-bar":"node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-status-bar"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot":"node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot","uni_modules/hx-navbar/components/hx-navbar/hx-navbar":"uni_modules/hx-navbar/components/hx-navbar/hx-navbar","node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons":"node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

@@ -1,6 +1,10 @@
 <template>
 	<view class="container">
-		<uni-nav-bar leftIcon="search"  height="80px" :border="false"></uni-nav-bar>
+		<!-- <uni-nav-bar leftIcon="search"  height="80px" :border="false"></uni-nav-bar> -->
+		<hx-navbar 
+			ref="hxnb"
+			 :config="config"
+			/>
 		<Tabs v-model="activeTab" :scroll="false" :tabs="tabs"></Tabs>
 		<uni-swiper-dot :info="swiperList" :current="activeTab">
 			<swiper class="swiper-box"  @change="changeSwiper">
@@ -30,6 +34,16 @@
 	export default {
 		data() {
 			return {
+				config:{
+									back: false,
+									color: '#ffffff',
+									border: false,
+									search: {
+											value:'',
+											placeholder: '',
+											disabled: false
+									}
+							},
 				activeTab: 0,
 				tabs: ['关注', '推荐', '最新', '发现'],
 				swiperList: [{

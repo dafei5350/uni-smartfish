@@ -1,1 +1,1 @@
-<view></view>
+<view class="container"><hx-navbar class="vue-ref" vue-id="4f824280-1" config="{{navConfig}}" data-ref="hxnb" bind:__l="__l"></hx-navbar><view class="header"><image class="img-show" src="https://oss.smartfish.com.cn/banner/order.png" mode="aspectFit"></image></view><view class="body"><search vue-id="4f824280-2" bind:__l="__l"></search></view></view>

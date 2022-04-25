@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText": "首页",
   "usingComponents": {
-    "uni-nav-bar": "/node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-nav-bar",
+    "hx-navbar": "/uni_modules/hx-navbar/components/hx-navbar/hx-navbar",
     "tabs": "/components/Tabs/Tabs",
     "uni-swiper-dot": "/node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot"
   }

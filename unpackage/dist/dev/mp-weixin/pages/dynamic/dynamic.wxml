@@ -1,1 +1,1 @@
-<view></view>
+<view class="container"><hx-navbar class="vue-ref" vue-id="1e91ca40-1" config="{{config}}" data-ref="hxnb" bind:__l="__l"></hx-navbar>1</view>

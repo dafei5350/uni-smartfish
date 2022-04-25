@@ -1,5 +1,8 @@
 {
   "navigationBarTitleText": "预约",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "hx-navbar": "/uni_modules/hx-navbar/components/hx-navbar/hx-navbar",
+    "search": "/components/Search/Search"
+  }
 }

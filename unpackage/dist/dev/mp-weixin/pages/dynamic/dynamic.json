@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "发布动态",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "hx-navbar": "/uni_modules/hx-navbar/components/hx-navbar/hx-navbar"
+  }
 }

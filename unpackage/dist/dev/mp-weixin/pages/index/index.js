@@ -103,8 +103,8 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
-    uniNavBar: function() {
-      return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-nav-bar */ "node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-nav-bar/uni-nav-bar.vue */ 53))
+    hxNavbar: function() {
+      return __webpack_require__.e(/*! import() | uni_modules/hx-navbar/components/hx-navbar/hx-navbar */ "uni_modules/hx-navbar/components/hx-navbar/hx-navbar").then(__webpack_require__.bind(null, /*! @/uni_modules/hx-navbar/components/hx-navbar/hx-navbar.nvue */ 53))
     },
     Tabs: function() {
       return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! @/components/Tabs/Tabs.vue */ 18))
@@ -193,6 +193,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
 var _Tabs = _interopRequireDefault(__webpack_require__(/*! ../../components/Tabs/Tabs.vue */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
@@ -220,7 +224,17 @@ var _Tabs = _interopRequireDefault(__webpack_require__(/*! ../../components/Tabs
 //
 //
 //
-var _default = { data: function data() {return { activeTab: 0, tabs: ['关注', '推荐', '最新', '发现'], swiperList: [{ img: 'https://oss.smartfish.com.cn/banner/202203011414.jpg' }, { img: 'https://oss.smartfish.com.cn/banner/202203011433.png' }], fastList: [{ img: 'https://oss.smartfish.com.cn/other/fish-houser.png', text: '预约渔墅' }, { img: 'https://oss.smartfish.com.cn/other/vegetable.png', text: '认租田地' }, { img: 'https://oss.smartfish.com.cn/other/sedan.png', text: '预约房车' }] };}, onLoad: function onLoad() {}, watch: {},
+//
+//
+//
+//
+var _default = { data: function data() {return { config: { back: false, color: '#ffffff', border: false, search: { value: '', placeholder: '', disabled: false } }, activeTab: 0, tabs: ['关注', '推荐', '最新', '发现'], swiperList: [{ img: 'https://oss.smartfish.com.cn/banner/202203011414.jpg' }, { img: 'https://oss.smartfish.com.cn/banner/202203011433.png' }], fastList: [{ img: 'https://oss.smartfish.com.cn/other/fish-houser.png', text: '预约渔墅' }, { img: 'https://oss.smartfish.com.cn/other/vegetable.png', text: '认租田地' }, { img: 'https://oss.smartfish.com.cn/other/sedan.png', text: '预约房车' }] };
+
+  },
+  onLoad: function onLoad() {
+
+  },
+  watch: {},
 
 
   methods: {
