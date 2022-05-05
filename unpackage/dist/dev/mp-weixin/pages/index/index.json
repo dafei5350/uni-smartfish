@@ -3,6 +3,7 @@
   "usingComponents": {
     "hx-navbar": "/uni_modules/hx-navbar/components/hx-navbar/hx-navbar",
     "tabs": "/components/Tabs/Tabs",
-    "uni-swiper-dot": "/node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot"
+    "uni-swiper-dot": "/node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot",
+    "tell-about": "/components/TellAbout/TellAbout"
   }
 }

@@ -3,6 +3,7 @@
   "enablePullDownRefresh": false,
   "usingComponents": {
     "hx-navbar": "/uni_modules/hx-navbar/components/hx-navbar/hx-navbar",
-    "search": "/components/Search/Search"
+    "search": "/components/Search/Search",
+    "uni-icons": "/node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons"
   }
 }

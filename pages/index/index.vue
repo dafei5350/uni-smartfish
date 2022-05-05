@@ -1,10 +1,6 @@
 <template>
 	<view class="container">
-		<!-- <uni-nav-bar leftIcon="search"  height="80px" :border="false"></uni-nav-bar> -->
-		<hx-navbar 
-			ref="hxnb"
-			 :config="config"
-			/>
+		<hx-navbar ref="hxnb" :config="config" />
 		<Tabs v-model="activeTab" :scroll="false" :tabs="tabs"></Tabs>
 		<uni-swiper-dot :info="swiperList" :current="activeTab">
 			<swiper class="swiper-box"  @change="changeSwiper">
@@ -15,25 +11,30 @@
 				</swiper-item>
 			</swiper>
 		</uni-swiper-dot>
+		{{savedFilePath}}
 		<view class="title-tips">快速入口</view>
 		<view class="fast">
 			<view v-for="(item, index) in fastList" :key="index">
 				<view class="item">
 					<image class="img" :src="item.img" mode="aspectFit"></image>
 					<view class="text">{{item.text}}</view>
-				</view>
+				</view> 
 			</view>
-
+		</view>
+		<view class="tell">
+			<TellAbout></TellAbout>
 			
 		</view>
 	</view>
 </template>
 
 <script>
-	import Tabs from "../../components/Tabs/Tabs.vue"
+	import Tabs from "@/components/Tabs/Tabs.vue"
+	import TellAbout from "@/components/TellAbout/TellAbout.vue"
 	export default {
 		data() {
 			return {
+				savedFilePath: '',
 				config:{
 									back: false,
 									color: '#ffffff',
@@ -127,6 +128,11 @@
 				color: #333333;
 			}
 		}
+	}
+	.tell {
+		padding: 0 24rpx;
+		margin-top: 30rpx; 
+		
 	}
 }
 </style>

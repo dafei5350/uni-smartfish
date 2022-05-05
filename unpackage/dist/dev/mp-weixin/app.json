@@ -4,7 +4,7 @@
     "pages/join/join",
     "pages/appointment/appointment",
     "pages/my/my",
-    "pages/dynamic/dynamic"
+    "pages/login/login"
   ],
   "subPackages": [],
   "window": {
@@ -46,6 +46,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }
