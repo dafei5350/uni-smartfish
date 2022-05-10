@@ -1,5 +1,10 @@
 import App from './App'
 import api from '@/api/'
+import {router,RouterMount} from '@/router/index'  //路径换成自己的
+
+
+
+Vue.use(router)
 
 // #ifndef VUE3
 import Vue from 'vue'
