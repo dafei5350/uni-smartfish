@@ -3,13 +3,13 @@
 		<view class="main">
 			<view class="header">
 				<view class="action">
-					<image class="avatar" src="../../static/tabbar/my1.png" mode="aspectFit"></image>
+					<image class="avatar" src="@/static/tabbar/my1.png" mode="aspectFit"></image>
 					<view class="userinfo">
 						<view class="name">怪狗</view>
 						<view class="time">2022年5月5日</view>
 					</view>
 				</view>
-				<view class="action">
+				<view class="action" @click="onMore">
 					<uni-icons type="more-filled" size="20"></uni-icons>
 				</view>
 			</view>
@@ -24,8 +24,23 @@
 				</view>
 			</view>
 			<view class="footer">
+				<view class="ico-item">
+					<uni-icons type="paperplane" size="25"></uni-icons>
+					<view class="num">分享</view>
+				</view>
+				<view class="ico-item">
+					<uni-icons type="chat" size="25"></uni-icons>
+					<view class="num">99</view>
+				</view>
+				<view class="ico-item" @click="onLike">
+					<uni-icons :type="isLike?'hand-up':'hand-up-filled'" :color="isLike?'':'#ff4757'" size="25"></uni-icons>
+					<view class="num">99</view>
+				</view>
 				
 			</view>
+		</view>
+		<view class="more" v-if="isMore">
+			
 		</view>
 	</view>
 </template>
@@ -35,18 +50,29 @@
 		name:"TellAbout",
 		data() {
 			return {
-				
+				isMore: false,
+				isLike: false
 			};
+		},
+		methods: {
+			onLike() {
+				this.isLike = !this.isLike
+			},
+			onMore() {
+				this.isMore = true
+			}
 		}
+
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
 	
 	.main {
 		border-radius: 20rpx;
 		padding: 24rpx;
+		margin-top: 30rpx;
 		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 		.header {
 			width: 100%;
@@ -94,6 +120,20 @@
 					width: 200rpx;
 					height: 200rpx;
 					border-radius: 20rpx;
+				}
+			}
+		}
+		.footer {
+			height: 70rpx;
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+			.ico-item {
+				display: flex;
+				align-items: center;
+				margin-left: 50rpx;
+				.num {
+					margin-left: 5rpx;
 				}
 			}
 		}

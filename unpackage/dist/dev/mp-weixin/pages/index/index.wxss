@@ -87,55 +87,70 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.container .main {
+.container .main.data-v-519b1284 {
   border-radius: 20rpx;
   padding: 24rpx;
+  margin-top: 30rpx;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
-.container .main .header {
+.container .main .header.data-v-519b1284 {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.container .main .header .action {
+.container .main .header .action.data-v-519b1284 {
   display: flex;
   align-items: center;
 }
-.container .main .header .action .avatar {
+.container .main .header .action .avatar.data-v-519b1284 {
   width: 80rpx;
   height: 80rpx;
   border-radius: 50%;
 }
-.container .main .header .action .userinfo {
+.container .main .header .action .userinfo.data-v-519b1284 {
   margin-left: 20rpx;
 }
-.container .main .header .action .userinfo .name {
+.container .main .header .action .userinfo .name.data-v-519b1284 {
   font-size: 26rpx;
   font-weight: 700;
   color: #333333;
 }
-.container .main .header .action .userinfo .time {
+.container .main .header .action .userinfo .time.data-v-519b1284 {
   font-size: 20rpx;
   font-weight: 400;
   color: #999999;
 }
-.container .main .body .content {
+.container .main .body .content.data-v-519b1284 {
   margin-top: 30rpx;
   font-size: 30rpx;
   font-weight: 400;
   color: #333333;
 }
-.container .main .body .img-grup {
+.container .main .body .img-grup.data-v-519b1284 {
   margin-top: 30rpx;
   display: grid;
   grid-row-gap: 10rpx;
   grid-column-gap: 10rpx;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.container .main .body .img-grup .thumb {
+.container .main .body .img-grup .thumb.data-v-519b1284 {
   width: 200rpx;
   height: 200rpx;
   border-radius: 20rpx;
+}
+.container .main .footer.data-v-519b1284 {
+  height: 70rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.container .main .footer .ico-item.data-v-519b1284 {
+  display: flex;
+  align-items: center;
+  margin-left: 50rpx;
+}
+.container .main .footer .ico-item .num.data-v-519b1284 {
+  margin-left: 5rpx;
 }
 
 @charset "UTF-8";

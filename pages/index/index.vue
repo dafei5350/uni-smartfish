@@ -22,7 +22,10 @@
 			</view>
 		</view>
 		<view class="tell">
-			<TellAbout></TellAbout>
+			<template v-for="(item, index) in 5">
+				<TellAbout></TellAbout>
+			</template>
+			
 			
 		</view>
 	</view>
@@ -75,6 +78,9 @@
 			changeSwiper(e) {
 				this.activeTab = e.detail.current
 			},
+		},
+		options: {
+			styleIsolation: 'shared'
 		}
 	}
 </script>
